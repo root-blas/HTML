@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <style>
+            body {
+                background-color: skyblue;
+            }
+            col:nth-child(2){
+                background-color: red;
+            }
+
+        col:nth-child(1){
+            background-color: blueviolet;
+        }
+        </style>
+    </head>
+    <body>
+    <!-- Las tablas en HTML sirven para mostrar contenido tabulado.
+    
+    La estructura basica de una tabla se compone de:
+    table: etiqueta que encierra una tabla.
+    tr: table row: etiqueta que construye una fila.
+    td: table data: etiqueta que contruye una celda.
+
+    truco: el termino de celdas dentro de un td establecera el numero de columnas de la tabla.
+    -->
+    <!-- Para establecer un titulo de una tabla va justo despues de la etiqueta table y se representa con la etiqueta captrion. es una etiqueta opcional, y segun las especificaciones esta etiqueta se coloca despues de la etiqueta caption.
+    
+    Las cabeceras de las tablas se establecen con la etiqueta (thead).
+    Dentro tendremos una etiqueta tr normal para establecer la fila de la cabecera, pero en el caso de las celdas, las estableceremos con la etiqueta th en lugar de td.
+
+    Siempre y cuando utilicemos un thead siempre hay que utilizar un tbody al comienzo de la tabla y donde termina.
+
+    luego tenemos un atributo llamado tfoot que sirve para establecer un pie de tabla, esta estiqueta sirve para establecer total de horas, asignatura, en fin lo que quieras especificar y esta etiqueta es muy opcional.
+
+    el tfoot va con la misma estructura de una tabla normal.
+
+    Para hacer que una celda ocupen mas de una fila o mas de una columna tenemos dos atributos:
+    rowspan: sirve para que una celda ocupe mas de una fila, el valor por defecto es 1.
+
+    colspan: sirve para que una celda ocupe mas de una columna, el valor por defecto es 1.
+
+    Cuando necesitamos seleccionar una columna, tenemos la etiqueta colgroup, que nos permite seleccionar una columna en concreto. Dentro pondremos tantas etiquetas col como columnas tengamos, cada etiqueta col equivaldra a una columna a una columna siguiendo el mismo orden que tiene la tabla.
+
+    si necesitamos una etiqueta col que agrupe mas de una columna, tendremos el atributo span, que funciona exactamente como colspan y rowspan.
+
+    para seleccionar una sola columna vadira solo con  col, pero para seleccionar una en especifico deberiamos poner col:nth-child(2) y de esta forma podremos seleccionar una en particular.
+
+    normalmente se realiza por cada columna un col, pero tambien esto se puede con css poner como queramos, tan solo seleccionando la cantidad de columna que querramos, o un numero en especifico.
+
+    en este caso seleccione la columna 5, y le di un color y un col que me seleccione todas las columnas con solo ponerle el atributo span a la etiqueta col y la columna deseada en mi caso el 5, por que podriamos darle un color a cada una de las columnas, cabe destacar que esta no es la forma correcta, ya que esto es una prueba para darle forma visualmente.
+    -->
+
+        <h1>Tablas</h1>
+
+        <table>
+            <caption>HORARIO DE CLASES</caption>
+            <colgroup>
+                <col span="5">
+                <col>
+                <col>
+                <col>
+                <col>
+            </colgroup>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>L</th>
+                    <th>M</th>
+                    <th>X</th>
+                    <th>J</th>
+                    <th>V</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>8:30 - 9:30</td>
+                    <td>Matematicas</td>
+                    <td>Matematicas</td>
+                    <td>Sociales</td>
+                    <td>Matematicas</td>
+                    <td>Matematicas</td>
+                </tr>
+                <tr>
+                    <td>9:30 - 10:25</td>
+                    <td>Matematicas</td>
+                    <td>Matematicas</td>
+                    <td>Sociales</td>
+                    <td>Matematicas</td>
+                    <td>Matematicas</td>
+                </tr>
+                <tr>
+                    <td>10:25 - 11:20</td>
+                    <td>Matematicas</td>
+                    <td>Matematicas</td>
+                    <td>Sociales</td>
+                    <td>Matematicas</td>
+                    <td>Matematicas</td>
+                </tr>
+                <tr>
+                    <td>11:20 - 11:45</td>
+                    <td colspan="5">Recreo</td>
+                </tr>
+                <tr>
+                    <td>11:45 - 12:40</td>
+                    <td>Matematicas</td>
+                    <td>Matematicas</td>
+                    <td>Sociales</td>
+                    <td>Matematicas</td>
+                    <td>Matematicas</td>
+                </tr>
+                <tr>
+                    <td>12:40 - 13:35</td>
+                    <td rowspan="2">tecnologia</td>
+                    <td>Matematicas</td>
+                    <td>Sociales</td>
+                    <td>Matematicas</td>
+                    <td>Matematicas</td>
+                </tr>
+                <tr>
+                    <td>13:35 - 14:30</td>
+                    <td>Matematicas</td>
+                    <td>Sociales</td>
+                    <td>Matematicas</td>
+                    <td>Matematicas</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="5">Total de asignaturas</td>
+                    <td>12</td>
+                </tr>
+            </tfoot>
+        </table>
+    
+</html>

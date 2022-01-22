@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contenido embebido</title>
+
+</head>
+<body>
+    <!-- El contenido embebido es todo el contenido que nos traemos desde fuera.
+
+    estos archivos son los que mas pesan en nuestros sitios web.
+
+    los tipos mas conocidos son:
+
+    Imagenes
+    Video
+    Audio
+    Iframes  
+
+        Imagenes:
+
+        Los formatos de imagenes para web las podemos clasificar en dos tipos:
+
+        Vectoriales: 
+            svg(recomendado siempre que se pueda)
+            
+        Mapa de bits:
+            jpg
+            png 8 y 24 (si necesitas transparencia)
+            gif (si necesitas una imagen animada)
+            webp (el formato que menos pesa)
+    -->
+
+    <!-- <h1>Imagenes</h1>
+    <img src="/contenido-embebido/assets/imagenes/nerd-social.svg" alt="nerd"> -->
+
+    <!-- si queremos que en caso de que una pantalla sea pequeña podemos hacer lo siguiente para cargar una imagen el 3x es el tamaño de la pantalla, para qwue se abra opcionalmente la segunda opcion en caso de tener 300px la imagen pequeña, esto se puede hacer con muchos tamaños y condiciones y tambiene s recomendable ponerle un src al final con una ruta de la imagen por si las anteriores no funcionan, teniendo en cuenta que al principio ponemos un srcset-->
+
+    <!-- <img srcset="/contenido-embebido/assets/imagenes/imagenweb.webp,https://s2.aconvert.com/convert/p3r68-cdx67/tbxbw-mtowi.webp 3x" src=""/contenido-embebido/assets/imagenes/imagenweb.webp" alt="imagen"> -->
+
+
+        <!-- <picture>
+            <source srcset="/contenido-embebido/assets/imagenes/imagenweb.webp,https://s2.aconvert.com/convert/p3r68-cdx67/tbxbw-mtowi.webp">
+            <img src="/contenido-embebido/assets/imagenes/imagenweb.webp" alt="imagen">
+        </picture> -->
+
+        <!-- aquii la diferencian es que al final se pone la etiqwueta img y esta etiqueta picture es experimental pero tambien funciona.
+        
+        aqui pongo a continuacion un valor de 1200px diciendole que abra esa imagen si la pantalla resiste y si no que abra la otra y en ambos casos se pueden utilizar media como 2x o 3x etc-->
+
+        <picture srcset="/contenido-embebido/assets/imagen12.jpg" media="(max-width:1200px)">
+
+        <img src="/contenido-embebido/assets/imagen12.jpg" alt="hola mundo">
+        </picture>
+</body>
+</html>

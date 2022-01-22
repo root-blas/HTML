@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seccion de contenido</title>
+</head>
+<!-- section: es un contenedor generico que agrupa contenido que esta relacionado. Cuando creamos bloques cuyo contenido es parte del bloque total usaremos section.
+
+article: es un contenedor que representa contenido independiente, es decir, podemos leer ese fragmento en cualquier otro sitio y tendia sentido por si mismo
+
+aside: se utiliza para representar contenido relacionado pero que no forma parte del contenido principal.
+
+Anidamiento: 
+Un section puede contener articles, por ejemplo, si tenemos varios articulos que hablan sobre las etiquetas html, deben ir dentro de un section, ya que el contenido esta relacionado entre si, y los article serian contenido independiente por que podriamos leerlo sin haber leido el resto, y seguiria teniendo sentido.
+
+El article es definido como un componente de la pagina de contenido independiente, esto implica que esta etiqueta pueda tener un header y un footer propios.
+
+Tambien ewxisten casos que un article tenga varias secciones, el articulo independiete  podria ser navegadores y este contener dentro secciones como navegadores mas utilizados en 2020
+
+-->
+<body>
+  <header>
+    <h1>Noticias Nacionales</h1>
+  </header>
+  <main>
+        <!-- esta es la forma correcta semanticamentre de hacer un article e incluso el titulo lo podiamos poner en un header y hasta ponerle un footer ya que es aparte y semanticamente es correcto y en este ejemplo vermos como el section encierra article -->
+    <section>
+      <h2>seccion como contenedor</h2>
+      </section>
+        <h3>Noticias del dia</h3>
+        <article>
+          <header>
+            <h4>Noticia 1</h4>
+          </header>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo voluptatum exercitationem nesciunt adipisci impedit nemo maiores dicta eius reiciendis unde optio fugiat, similique molestiae deserunt soluta dignissimos! Unde, odio molestiae.</p>
+          <footer>La noticia uno fue informada por blas</footer>
+        </article>
+        <article>
+          <h4>Noticia 2</h4>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet eius, veritatis quidem delectus maxime repellat quia, fuga possimus perspiciatis nisi, consequatur vel. Vel illo deserunt dicta earum voluptatem autem possimus.
+          Dolorum nemo animi inventore libero quis placeat esse tempore deleniti ad commodi ex incidunt, provident laborum, at totam exercitationem aliquam quo saepe quam ducimus nulla. Placeat velit accusantium a tenetur!</p>
+        </article>
+        <article>
+          <h4>Noticia 3</h4>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet eius, veritatis quidem delectus maxime repellat quia, fuga possimus perspiciatis nisi, consequatur vel. Vel illo deserunt dicta earum voluptatem autem possimus.
+          Dolorum nemo animi inventore libero quis placeat esse tempore deleniti ad commodi ex incidunt, provident laborum, at totam exercitationem aliquam quo saepe quam ducimus nulla. Placeat velit accusantium a tenetur!</p>
+        </article>
+      </section>
+    </section>
+  </main>
+  <footer>16-12-2021</footer>
+</body>
+</html>

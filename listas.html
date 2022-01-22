@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+    <!-- Las listaS EN HTML sirven para listar contenido. en funcion del tipo de contenido de nuestra lista tenempos tres, cada elemento de la lista se representa con la etiqueta <li> list item, tanto en la etiqueta ul como ol.
+
+    tambien se puede anidar varias listas y tener varias listas distintas depende de la necesidad
+    
+    ul: unordered list: se utilizan cuando el orden de los elementos no influyen (lista de la comopra) se representa con puntos
+
+    ol: ordered list: se utilizan cuando el orden de los elementos es importante (top 10)
+
+    dl: definition list: se utilizan para hacer una lista de definicioones(diccionario) esta es la qeu menos se utiliza, casi nunca.
+
+    cada elemento de una lista dl lleva 2 etiquetas:
+
+    dt: definition term: el termino que vamos a definir.
+
+    dd: definition description: la decripcion del termino
+
+        atributos de las listas:
+
+        ol:
+        type: estilo de numeracion (1: es el que viene por defecto,A: comienza letras mayuscula,a: comienza por letras mayuscula,I: numeros romanos,i: numeros romanos en minuscula)
+        start: inicio de la secuencia (un nunmero) si ponemos el 3 comenzara la lista en el 3 y seguira luegon con el 4 y asi sucesivamente
+
+        ul: 
+        type: estilos de los items(disc: esa es la quie viene por defecto, square: en este se pone un punto cuadrado, circle: aqui viene un circulo en blanco)
+
+    -->
+    
+        <div>
+            <ul>
+                <li><a href="#punto1">punto1</a></li>
+                <li><a href="#punto2">punto2</a></li>
+                <li><a href="#punto3">punto3</a></li>
+                <li><a href="#punto4">punto4</a></li>
+            </ul>
+        </div>
+        <ul type="circle">
+            <!-- al hacer un menu esta es la forma correcta de correcta semanticamente -->
+            <h2>lista de la compra</h2>
+            <li>pan</li>
+            <li>huevos</li>
+            <li>leche</li>
+        </ul>
+
+        <ol type="A" start="1">
+            <!-- al hacer un menu esta es la forma correcta de correcta semanticamente es lo mismo practicamente -->
+            <h2>Orden de aprendizaje de desarrollo web</h2>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>javascript</li>
+        </ol>
+
+        <h2> lenguajes para el deasrrollo web</h2>
+        <dl>
+            <dt>HTML</dt>
+            <dd>Hypertext Mark languaje: es un lenguaje de marcado que usa para estructurar datos en una pagina web</dd>
+            <dt>CSS</dt>
+            <dd>cascade style sheet: es un lenguaje de diseño que se utiliza para dar estilo al html</dd>
+            <dt>javascript</dt>
+            <dd>es un lenguaje de programacion para dar interactividad a un sitio web</dd>
+        </dl>
+    </body>
+
+</html>
